@@ -1,0 +1,32 @@
+@import "/styles/base/variables";
+@import "/styles/base/mixin";
+
+.homecards{
+    max-width: 1080px;
+    margin: 100px auto;
+   
+    @include device('tablet'){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .title{
+        font-size: 35px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:15px;
+        flex-wrap: wrap;
+
+        @include device('tablet'){
+            gap:10px;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

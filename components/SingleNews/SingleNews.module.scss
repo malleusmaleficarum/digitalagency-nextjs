@@ -1,0 +1,40 @@
+@import '/styles/base/variables';
+@import '/styles/base/mixin';
+
+.single{
+    margin: 100px auto;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+
+    .title{
+        width: 60%;
+        font-size: 28px;
+        color: #555;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .info{
+        font-size: 14px;
+    }
+
+    img{
+        width: 80%;
+        object-fit: cover;
+        border-radius: 5px;
+
+        @include device('tablet'){
+            height: 250px;
+        }
+    }
+
+    .content{
+        width: 80%;
+        font-size: 16px;
+        letter-spacing: 0.1rem;
+        line-height: 1.7rem;
+    }
+}
