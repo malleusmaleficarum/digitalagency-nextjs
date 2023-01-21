@@ -5,7 +5,7 @@ import styles from "./Newsletter.module.scss";
 const Newsletter = () => {
   return (
     <div className={styles.newsletter}>
-      <p>Don't hesitate to contact us if you have any question.</p>
+      <p>Dont hesitate to contact us if you have any question.</p>
       <form className={styles.input}>
         <Link href='/contact'>
           <button>Contact us</button>
