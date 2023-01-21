@@ -4,7 +4,7 @@ import Header from "@/components/Header/Header";
 import Modal from "@/components/Modal/Modal";
 import React, { useEffect, useState } from "react";
 
-const Contact = () => {
+const ContactPage = () => {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

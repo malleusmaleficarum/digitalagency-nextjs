@@ -15,7 +15,7 @@ const SingleNews = ({ news }) => {
         {news.content} <br />
         <br />{" "}
         <strong style={{ textDecoration: "underline" }}>
-          it's truncated from the api
+          its truncated from the api
         </strong>
       </p>
       <p className={styles.content}>
