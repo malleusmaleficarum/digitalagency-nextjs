@@ -26,8 +26,8 @@ const HomeCards = ({ content }) => {
     <div className={styles.homecards} ref={homeCardRef}>
       <h1 className={styles.title}>Company News</h1>
       <div className={styles.wrapper} ref={homeCardWrapperRef}>
-        {content.map((cont) => (
-          <Card content={cont} key={cont.publishedAt} />
+        {content.map((cont, index) => (
+          <Card content={cont} key={cont.publishedAt} index={index} />
         ))}
       </div>
     </div>

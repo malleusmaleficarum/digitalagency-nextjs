@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Date from "../date";
 import styles from "./Card.module.scss";
 
-const Card = ({ content }) => {
+const Card = ({ content, index }) => {
   useEffect(() => {
     console.log(content);
   }, []);
@@ -13,7 +13,10 @@ const Card = ({ content }) => {
       <div className={styles.wrapper}>
         <img src={content.urlToImage} alt='News Banner' />
 
-        <h1>{content.title}</h1>
+        <Link href={`/news/${index}`}>
+          <h1>{content.title}</h1>
+        </Link>
+
         <p className={styles.author}>Author: {content.author}</p>
         <p className={styles.date}>
           <Date dateString={content.publishedAt} />
